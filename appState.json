@@ -1,0 +1,101 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "78f9fdc2-bb98-4104-a69f-58d815d81915": {
+        "id": "78f9fdc2-bb98-4104-a69f-58d815d81915",
+        "parent": null,
+        "name": "testTriggersIndunil",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "33a7d78c-cba7-4998-a9ba-1e9efdaababf"
+        ],
+        "isRemovable": false,
+        "filePath": "testTriggersIndunil"
+      },
+      "33a7d78c-cba7-4998-a9ba-1e9efdaababf": {
+        "id": "33a7d78c-cba7-4998-a9ba-1e9efdaababf",
+        "parent": "78f9fdc2-bb98-4104-a69f-58d815d81915",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testTriggersIndunil/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    callback(event);\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest1testIrelandqainduany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "78f9fdc2-bb98-4104-a69f-58d815d81915",
+    "openFiles": [
+      "33a7d78c-cba7-4998-a9ba-1e9efdaababf"
+    ],
+    "currentFileId": "33a7d78c-cba7-4998-a9ba-1e9efdaababf",
+    "resources": {
+      "apigeuWest1testIrelandqainduany": {
+        "name": "apigeuWest1testIrelandqainduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-1",
+          "apiMode": 0,
+          "apiName": "testIreland",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indu",
+          "resourcePath": "/qa/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testTriggersIndunil",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1568187636449
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testTriggersIndunil",
+      "url": "https://github.com/Indunil1992/testTriggersIndunil"
+    }
+  }
+}
