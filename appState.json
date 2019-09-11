@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "testTriggersIndunil/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    callback(event);\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n      if (event) {\ncallback(event);}\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -35,7 +35,16 @@
             "resourceName": "apigeuWest1testIrelandqainduany",
             "config": {}
           }
-        ]
+        ],
+        "testCases": {
+          "5772c5a8-1417-44a4-a425-79455c466cd0": {
+            "id": "5772c5a8-1417-44a4-a425-79455c466cd0",
+            "name": "Test event",
+            "functionId": "33a7d78c-cba7-4998-a9ba-1e9efdaababf",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "rootNode": "78f9fdc2-bb98-4104-a69f-58d815d81915",
@@ -89,7 +98,7 @@
     "projectRegion": "eu-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568187636449
+    "lastSave": 1568187803686
   },
   "VCS_STATE": {
     "provider": "GitHub",
